@@ -1,0 +1,3 @@
+[submodule "www/html/wp-content/themes/hueman"]
+	path = www/html/wp-content/themes/hueman
+	url = git@github.com:gfd3e34s/hueman.git

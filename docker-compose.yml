@@ -5,7 +5,7 @@ services:
       context: ./
       dockerfile: mysql.docker
     volumes:
-      - "./data/db:/var/lib/mysql"
+      - ./data/db:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: wordpress
       MYSQL_DATABASE: wordpress
@@ -15,6 +15,8 @@ services:
   wordpress:
     image: wordpress:latest
     restart: always
+    volumes:
+      - ./www/html:/var/www/html
     links:
       - db
     environment:
