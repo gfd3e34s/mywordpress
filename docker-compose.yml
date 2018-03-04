@@ -20,7 +20,6 @@ services:
     links:
       - db
     environment:
-      - VIRTUAL_HOST=mercariwatch.com
       - WORDPRESS_DB_HOST=db:3306
       - WORDPRESS_DB_PASSWORD=wordpress
 
